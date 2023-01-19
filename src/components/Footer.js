@@ -100,7 +100,7 @@ export default function Footer() {
 							<div className="footer-menu">
 								<a href="/">Home</a> <a href="#">Cookies</a>{' '}
 								<a href="#">Help</a>
-								<a href="#">FQAs</a>
+								<a href="#">FAQs</a>
 							</div>
 						</div>
 					</div>
