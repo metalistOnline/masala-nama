@@ -91,7 +91,7 @@ export default function Footer() {
 				<div className="copyright">
 					<div className="row">
 						<div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-							Designed & Maintined with 💛 by{' '}
+							Designed & Maintained with 💛 by{' '}
 							<a className="border-bottom" href="http://polls.delabs.co.in">
 								DE Labs
 							</a>
