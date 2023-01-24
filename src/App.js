@@ -7,20 +7,22 @@ import About from './components/About';
 import Menu from './components/Menu';
 import Team from './components/Team';
 import Map from './components/Map';
+import Offers from './components/Offers';
 
 function App() {
-	return (
-		<div>
-			<Header />
-			<Hero />
-			{/* <Service /> */}
-			<About />
-			<Menu />
-			<Team />
-			<Map />
-			<Footer />
-		</div>
-	);
+    return (
+        <div>
+            <Header />
+            <Hero />
+            {/* <Service /> */}
+            <Offers />
+            <Menu />
+            <About />
+            {/* <Team /> */}
+            <Map />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
