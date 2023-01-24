@@ -17,7 +17,7 @@ function App() {
             {/* <Service /> */}
             <Offers />
             <Menu />
-            <About />
+            {/* <About /> */}
             {/* <Team /> */}
             <Map />
             <Footer />

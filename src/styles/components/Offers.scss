@@ -1,8 +1,37 @@
 .offers-section {
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
-.offers-section-1 {
-color:white;
+
+.offers-title {
+    color: #0f172b !important;
+    font-size: 3rem;
+
+    &::before,
+    &::after {
+        background: #0f172b;
+    }
+}
+
+.offer-description {
+    color: white !important;
+}
+
+.offer-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.bg-red {
+    background-color: #ce4d4c;
+}
+
+.bg-yellow {
+    background-color: #fba117;
+}
+
+.text-yellow {
+    color: #fba117 !important;
 }
