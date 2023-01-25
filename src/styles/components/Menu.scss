@@ -1,0 +1,24 @@
+.font-3rem {
+    font-size: 3rem;
+}
+
+.font-1o5rem {
+    font-size: 1.5rem;
+}
+
+.w-80px {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.bg-white {
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.9)
+        ),
+        url(/img/IMG_9154.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

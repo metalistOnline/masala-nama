@@ -1,3 +1,7 @@
+import Map from './Map';
+import '../styles/components/Footer.scss';
+import NewWinLink from './Utils/NewWinLink';
+
 // Export Footer component as default
 export default function Footer() {
     // Return the component to be rendered
@@ -8,49 +12,50 @@ export default function Footer() {
         >
             <div className="container py-5">
                 <div className="row g-5">
-                    <div className="col-lg-3 col-md-6">
-                        <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
-                            Company
-                        </h4>
-                        <a className="btn btn-link" href="#">
-                            About Us
-                        </a>{' '}
-                        <a className="btn btn-link" href="#">
-                            Contact Us
-                        </a>{' '}
-                        <a className="btn btn-link" href="#">
-                            Reservation
-                        </a>{' '}
-                        <a className="btn btn-link" href="#">
-                            Privacy Policy
-                        </a>{' '}
-                        <a className="btn btn-link" href="#">
-                            Terms & Condition
-                        </a>
-                    </div>
-                    <div className="col-lg-3 col-md-6">
+                    <div className="col-lg-4 col-md-6 footer-text">
+                        <i class="fa fa-address-book text-primary font-1o5rem"></i>
+                        &nbsp;&nbsp;
                         <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
                             Contact
                         </h4>
                         <p className="mb-2">
-                            <i className="fa fa-map-marker-alt me-3"></i>SHOP#
-                            2, Ashok Nagar, Ana Sagar Link Rd, adjacent to CITY
-                            HOSPITAL, Mali Mohalla, Ajmer, Rajasthan 305001
+                            <i className="fa fa-map-marker-alt me-3"></i>
+                            <NewWinLink href="https://www.google.com/maps/place/MASALA+NAMA/@26.4756056,74.6350998,20z/data=!4m6!3m5!1s0x396be74419a69ee5:0x2bd1c2f662bb4b04!4b1!8m2!3d26.4759272!4d74.6354645">
+                                Shop #2, Ashok Nagar,
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ana
+                                Sagar Link Rd,
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjacent
+                                to City Hospital,
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mali
+                                Mohalla, Ajmer,
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rajasthan
+                                - 305001
+                            </NewWinLink>
                         </p>
                         <p className="mb-2">
-                            <i
-                                className="fa fa-phone-alt me-3"
-                                href="tel:+91-9829101401"
-                            ></i>
-                            <a href="tel:+91-9829101401">+91 9829101401</a>
+                            <i className="fa fa-phone-alt me-3"></i>
+                            <a href="tel:+91-9829101401">+91-9829101401</a>
                         </p>
-                        <p className="mb-2">
+                        {/* <p className="mb-2">
                             <i className="fa fa-envelope me-3"></i>
                             <a href="mailto:info@example.com">
                                 info@example.com
                             </a>
+                        </p> */}
+                        <p className="mb-2">
+                            <i className="fab fa-facebook-f me-3"></i>{' '}
+                            <NewWinLink
+                                href="https://www.facebook.com/profile.php?id=100089047175484&mibextid=ZbWKwL"
+                                className="text-uppercase"
+                            >
+                                masala-nama
+                            </NewWinLink>
                         </p>
-                        <div className="d-flex pt-2">
+                        {/* <div className="d-flex pt-2">
                             <a
                                 className="btn btn-outline-light btn-social"
                                 href="https://instagram.com/masala_nama?igshid=ZDdkNTZiNTM="
@@ -65,40 +70,48 @@ export default function Footer() {
                             >
                                 <i className="fab fa-facebook-f"></i>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
-                    <div className="col-lg-3 col-md-6">
+                    <div className="col-lg-4 col-md-6 footer-text">
+                        <i class="fa fa-clock text-primary font-1o5rem"></i>
+                        &nbsp;&nbsp;
                         <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
-                            Opening
+                            Timings
                         </h4>
                         <h5 className="text-light fw-normal">
+                            <i class="fa fa-calendar-week me-3 font-1rem"></i>
                             Monday - Friday
                         </h5>
-                        <p>01:00 PM - 11:00 PM</p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01:00
+                            PM - 11:00 PM
+                        </p>
                         <h5 className="text-light fw-normal">
+                            <i class="fa fa-calendar-day me-3 font-1rem"></i>
                             Saturday - Sunday
                         </h5>
-                        <p>12:30 PM - 11:30 PM</p>
-                    </div>
-                    <div className="col-lg-3 col-md-6">
-                        <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
-                            Newsletter
-                        </h4>
-                        <div
-                            className="position-relative mx-auto"
-                            style={{ maxWidth: '400px' }}
-                        >
-                            <input
-                                className="form-control border-primary w-100 py-3 ps-4 pe-5"
-                                type="text"
-                                placeholder="Your email"
-                            />
-                            <button
-                                type="button"
-                                className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:30
+                            PM - 11:30 PM
+                        </p>
+                        <p className="mb-2">
+                            <i className="fab fa-instagram me-3"></i>
+                            <NewWinLink
+                                href="https://instagram.com/masala_nama?igshid=ZDdkNTZiNTM="
+                                className="text-uppercase"
                             >
-                                SignUp
-                            </button>
+                                masala_nama
+                            </NewWinLink>
+                        </p>
+                    </div>
+                    <div className="col-lg-4 col-md-12">
+                        <i class="fa fa-map-marked-alt text-primary font-1o5rem"></i>
+                        &nbsp;&nbsp;
+                        <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
+                            Location
+                        </h4>
+                        <div className="position-relative mx-auto">
+                            <Map />
                         </div>
                     </div>
                 </div>
@@ -117,9 +130,10 @@ export default function Footer() {
                         </div>
                         <div className="col-md-6 text-center text-md-end">
                             <div className="footer-menu">
-                                <a href="/">Home</a> <a href="#">Cookies</a>{' '}
-                                <a href="#">Help</a>
-                                <a href="#">FAQs</a>
+                                <a href="#hero">Home</a>
+                                <a href="#offers">Offers</a>
+                                <a href="#gallery">Gallery</a>
+                                <a href="#menu">Menu</a>
                             </div>
                         </div>
                     </div>

@@ -2,9 +2,12 @@ import '../styles/components/Offers.scss';
 
 export default function Offers() {
     return (
-        <div className="container-fluid position-relative p-0 offers-section bg-yellow">
+        <div
+            id="offers"
+            className="container-fluid position-relative p-0 offers-section bg-yellow"
+        >
             <div className="container-fluid py-5 bg-yellow hero-center">
-                <div className="container-fluid my-5 py-5">
+                <div className="container-fluid py-5">
                     <div className="row text-center mb-4 g-5">
                         <div className="mb-4">
                             <h1 class="section-title ff-secondary text-center offers-title fw-normal">
@@ -17,8 +20,9 @@ export default function Offers() {
                         <div className="offset-xl-1 col-xl-5 col-lg-6 text-center text-lg-center">
                             <img
                                 className="img-thumbnail offer-img mb-3"
-                                src="img/imgChickenLeg.jpg"
+                                src="/img/imgChickenLeg.jpg"
                                 alt="Chicken Leg"
+                                style={{ objectPosition: 'bottom' }}
                             />
 
                             <div className="offer-description">
@@ -38,7 +42,7 @@ export default function Offers() {
                         <div className="col-xl-5 col-lg-6 text-center text-lg-center overflow-hidden">
                             <img
                                 className="img-thumbnail offer-img mb-3"
-                                src="img/imgChicken2.jpg"
+                                src="/img/imgChicken2.jpg"
                                 alt="Chicken"
                             />
 

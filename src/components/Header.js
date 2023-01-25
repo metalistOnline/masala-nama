@@ -1,8 +1,10 @@
+import '../styles/components/Header.scss';
+
 // Export Header component as default
 export default function Header() {
     // Return the component to be rendered
     return (
-        <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+        <nav className="navbar sticky-top navbar-expand-lg navbar-dark px-4 px-lg-5 py-3 py-lg-0">
             <a href="#" className="navbar-brand p-0">
                 <h1 className="text-primary m-0">
                     <i className="fa fa-utensils me-3"></i>Masala Nama

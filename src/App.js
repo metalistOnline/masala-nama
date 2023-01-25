@@ -8,6 +8,7 @@ import Menu from './components/Menu';
 import Team from './components/Team';
 import Map from './components/Map';
 import Offers from './components/Offers';
+import Gallery from './components/Gallery';
 
 function App() {
     return (
@@ -16,10 +17,11 @@ function App() {
             <Hero />
             {/* <Service /> */}
             <Offers />
+            {/* <Gallery /> */}
             <Menu />
             {/* <About /> */}
             {/* <Team /> */}
-            <Map />
+            {/* <Map /> */}
             <Footer />
         </div>
     );

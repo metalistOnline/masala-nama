@@ -1,4 +1,20 @@
-.gallery {
-	min-height: 100vh;
-	background-color: aliceblue;
+.gallery-section {
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+
+.gallery-title {
+    color: #f2d19f !important;
+    font-size: 3rem;
+
+    &::before,
+    &::after {
+        background: #f2d19f;
+    }
+}
+
+.section-start {
+    min-height: 100vh;
+    display: flex;
+    align-items: start;
 }

@@ -18,7 +18,7 @@ export default function Map() {
         <div
             id="map"
             className="container-xxl"
-            style={{ width: '100%', height: '400px' }}
+            style={{ width: '100%', height: '200px' }}
         ></div>
     );
 }

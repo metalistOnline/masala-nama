@@ -1,12 +1,17 @@
+import '../styles/components/Menu.scss';
+
 export default function Menu() {
     return (
-        <div className="container-xxl py-5">
+        <div id="menu" className="container-fluid py-5 hero-center">
             <div className="container">
-                <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 className="section-title ff-secondary text-center text-primary fw-normal">
+                <div
+                    className="text-center wow fadeInUp pb-4"
+                    data-wow-delay="0.1s"
+                >
+                    <h5 className="section-title ff-secondary text-center text-primary fw-normal font-3rem">
                         Food Menu
                     </h5>
-                    <h1 className="mb-5">Most Popular Items</h1>
+                    <h1 className="mb-5 font-1o5rem">(Most Popular Items)</h1>
                 </div>
                 <div
                     className="tab-class text-center wow fadeInUp"
@@ -19,10 +24,10 @@ export default function Menu() {
                                 data-bs-toggle="pill"
                                 href="#tab-1"
                             >
-                                <i className="fa fa-coffee fa-2x text-primary"></i>
+                                <i className="fa fa-carrot fa-2x text-primary"></i>
                                 <div className="ps-3">
                                     <small className="text-body">Popular</small>
-                                    <h6 className="mt-n1 mb-0">Breakfast</h6>
+                                    <h6 className="mt-n1 mb-0">Veg Dishes</h6>
                                 </div>
                             </a>
                         </li>
@@ -32,14 +37,16 @@ export default function Menu() {
                                 data-bs-toggle="pill"
                                 href="#tab-2"
                             >
-                                <i className="fa fa-hamburger fa-2x text-primary"></i>
+                                <i className="fa fa-drumstick-bite fa-2x text-primary"></i>
                                 <div className="ps-3">
                                     <small className="text-body">Special</small>
-                                    <h6 className="mt-n1 mb-0">Lunch</h6>
+                                    <h6 className="mt-n1 mb-0">
+                                        Non-Veg Dishes
+                                    </h6>
                                 </div>
                             </a>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <a
                                 className="d-flex align-items-center text-start mx-3 me-0 pb-3"
                                 data-bs-toggle="pill"
@@ -51,7 +58,7 @@ export default function Menu() {
                                     <h6 className="mt-n1 mb-0">Dinner</h6>
                                 </div>
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
                     <div className="tab-content">
                         <div
@@ -60,169 +67,224 @@ export default function Menu() {
                         >
                             <div className="row g-4">
                                 <div className="col-lg-6">
-                                    <div className="d-flex align-items-center w-80px">
+                                    <div className="d-flex align-items-center">
                                         <img
-                                            className="flex-shrink-0 img-fluid rounded"
-                                            src="img/menu-1.jpg"
+                                            className="flex-shrink-0 img-fluid rounded w-80px"
+                                            src="img/menu/veg/item-1.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>
+                                                    Hara Bhara Stuff Kebab
+                                                </span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹265
                                                 </span>
                                             </h5>
-                                            <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                            <small>
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
                                             </small>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img
                                             className="flex-shrink-0 img-fluid rounded w-80px"
-                                            src="img/menu-2.jpg"
+                                            src="img/menu/veg/item-2.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>
+                                                    Banjara Paneer Tikka
+                                                </span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹295
                                                 </span>
                                             </h5>
-                                            <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                            <small>
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
                                             </small>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img
                                             className="flex-shrink-0 img-fluid rounded w-80px"
-                                            src="img/menu-3.jpg"
+                                            src="img/menu/veg/item-3.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>
+                                                    Malai Stuff Soya Chaap
+                                                </span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹295
                                                 </span>
                                             </h5>
-                                            <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                            <small>
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
                                             </small>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img
                                             className="flex-shrink-0 img-fluid rounded w-80px"
-                                            src="img/menu-4.jpg"
+                                            src="img/menu/veg/item-4.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>
+                                                    Tandoori Pineapple (6 Pcs)
+                                                </span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹210
                                                 </span>
                                             </h5>
                                             <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
                                             </small>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img
                                             className="flex-shrink-0 img-fluid rounded w-80px"
-                                            src="img/menu-5.jpg"
+                                            src="img/menu/veg/item-1.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>
+                                                    Hara Bhara Stuff Kebab
+                                                </span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹265
                                                 </span>
                                             </h5>
-                                            <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                            <small>
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
                                             </small>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img
                                             className="flex-shrink-0 img-fluid rounded w-80px"
-                                            src="img/menu-6.jpg"
+                                            src="img/menu/veg/item-2.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>
+                                                    Banjara Paneer Tikka
+                                                </span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹295
                                                 </span>
                                             </h5>
-                                            <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                            <small>
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
                                             </small>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img
                                             className="flex-shrink-0 img-fluid rounded w-80px"
-                                            src="img/menu-7.jpg"
+                                            src="img/menu/veg/item-3.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>
+                                                    Malai Stuff Soya Chaap
+                                                </span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹295
                                                 </span>
                                             </h5>
-                                            <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                            <small>
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
                                             </small>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img
                                             className="flex-shrink-0 img-fluid rounded w-80px"
-                                            src="img/menu-8.jpg"
+                                            src="img/menu/veg/item-4.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>
+                                                    Tandoori Pineapple (6 Pcs)
+                                                </span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹210
                                                 </span>
                                             </h5>
                                             <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
                                             </small>
                                         </div>
                                     </div>
@@ -235,173 +297,224 @@ export default function Menu() {
                                     <div className="d-flex align-items-center">
                                         <img
                                             className="flex-shrink-0 img-fluid rounded w-80px"
-                                            src="img/menu-1.jpg"
+                                            src="img/menu/nonveg/item-1.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>
+                                                    Murgh Dum Biryani (4 Pcs)
+                                                </span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹495
                                                 </span>
                                             </h5>
-                                            <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                            <small>
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-red"></i>
                                             </small>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img
                                             className="flex-shrink-0 img-fluid rounded w-80px"
-                                            src="img/menu-2.jpg"
+                                            src="img/menu/nonveg/item-2.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>
+                                                    Matki Egg Masala (4 Eggs)
+                                                </span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹320
                                                 </span>
                                             </h5>
-                                            <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                            <small>
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
                                             </small>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img
                                             className="flex-shrink-0 img-fluid rounded w-80px"
-                                            src="img/menu-3.jpg"
+                                            src="img/menu/nonveg/item-3.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>Murgh Rara (4 Pcs)</span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹495
                                                 </span>
                                             </h5>
-                                            <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                            <small>
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
                                             </small>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img
                                             className="flex-shrink-0 img-fluid rounded w-80px"
-                                            src="img/menu-4.jpg"
+                                            src="img/menu/nonveg/item-4.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>
+                                                    Waza Seekh Kebab Mutton
+                                                </span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹450
                                                 </span>
                                             </h5>
                                             <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
                                             </small>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img
                                             className="flex-shrink-0 img-fluid rounded w-80px"
-                                            src="img/menu-5.jpg"
+                                            src="img/menu/nonveg/item-1.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>
+                                                    Murgh Dum Biryani (4 Pcs)
+                                                </span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹495
                                                 </span>
                                             </h5>
-                                            <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                            <small>
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-red"></i>
                                             </small>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img
                                             className="flex-shrink-0 img-fluid rounded w-80px"
-                                            src="img/menu-6.jpg"
+                                            src="img/menu/nonveg/item-2.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>
+                                                    Matki Egg Masala (4 Eggs)
+                                                </span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹320
                                                 </span>
                                             </h5>
-                                            <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                            <small>
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
                                             </small>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img
                                             className="flex-shrink-0 img-fluid rounded w-80px"
-                                            src="img/menu-7.jpg"
+                                            src="img/menu/nonveg/item-3.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>Murgh Rara (4 Pcs)</span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹495
                                                 </span>
                                             </h5>
-                                            <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                            <small>
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
                                             </small>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
                                         <img
                                             className="flex-shrink-0 img-fluid rounded w-80px"
-                                            src="img/menu-8.jpg"
+                                            src="img/menu/nonveg/item-4.jpg"
                                             alt=""
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
+                                                <span>
+                                                    Waza Seekh Kebab Mutton
+                                                </span>
                                                 <span className="text-primary">
-                                                    115
+                                                    ₹450
                                                 </span>
                                             </h5>
                                             <small className="fst-italic">
-                                                Ipsum ipsum clita erat amet
-                                                dolor justo diam
+                                                <b className="text-red">
+                                                    Spice Quotient :{' '}
+                                                </b>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-red"></i>
+                                                <i className="fa fa-pepper-hot text-muted"></i>
                                             </small>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="tab-3" className="tab-pane fade show p-0">
+                        {/* <div id="tab-3" className="tab-pane fade show p-0">
                             <div className="row g-4">
                                 <div className="col-lg-6">
                                     <div className="d-flex align-items-center">
@@ -572,7 +685,7 @@ export default function Menu() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

@@ -25,11 +25,25 @@
 }
 
 .bg-red {
-    background-color: #ce4d4c;
+    background-color: rgb(206, 77, 76);
+    background: linear-gradient(rgba(206, 77, 76, 0.9), rgba(206, 77, 76, 0.9)),
+        url(/img/imgChickenLeg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bg-yellow {
     background-color: #fba117;
+
+    background: linear-gradient(
+            rgba(251, 161, 23, 0.9),
+            rgba(251, 161, 23, 0.9)
+        ),
+        url('/img/imgChicken2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .text-yellow {
