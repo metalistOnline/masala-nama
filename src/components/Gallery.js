@@ -15,7 +15,9 @@ export default function Gallery() {
                             </h1>
                         </div>
                     </div>
-                    <div className="row full-size"></div>
+                    <div className="row full-size">
+                        <div className="viewer"></div>
+                    </div>
                 </div>
             </div>
         </div>

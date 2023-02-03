@@ -111,7 +111,16 @@ export default function Footer() {
                             Location
                         </h4>
                         <div className="position-relative mx-auto">
-                            <Map />
+                            {/* <Map /> */}
+                            <a
+                                target="_blank"
+                                href="https://www.google.com/maps/place/MASALA+NAMA/@26.4756056,74.6350998,20z/data=!4m6!3m5!1s0x396be74419a69ee5:0x2bd1c2f662bb4b04!4b1!8m2!3d26.4759272!4d74.6354645"
+                            >
+                                <img
+                                    className="img-fluid map-center"
+                                    src="img/map.png"
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>
