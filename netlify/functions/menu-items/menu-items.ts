@@ -1,7 +1,7 @@
 import { Handler } from '@netlify/functions';
-import { createConnection } from 'mysql2/promise';
+import { withPlanetscale } from '@netlify/planetscale';
 
-export const handler: Handler = async (event, context) => {
+export const handler: Handler = withPlanetscale(async (event, context) => {
     const { name = 'stranger' } = event.queryStringParameters;
 
     const {
@@ -10,19 +10,13 @@ export const handler: Handler = async (event, context) => {
 
     const { body } = event;
 
-    const conn = await createConnection(planetscale);
-
     // Getting the rows returned by the table
-    const [rows] = await conn.execute('SELECT * from MenuItems');
-
-    // Consoles out the rows and ends the connection
-    console.log(rows);
-    await conn.end();
+    const result = await connection.execute('SELECT * from MenuItems');
 
     // Returns the rows as JSON response
     return {
         statusCode: 200,
-        body: JSON.stringify(rows),
+        body: JSON.stringify(result.rows),
     };
 
     // return {
@@ -31,4 +25,4 @@ export const handler: Handler = async (event, context) => {
     //         message: `Hello, ${name}!`,
     //     }),
     // };
-};
+});
