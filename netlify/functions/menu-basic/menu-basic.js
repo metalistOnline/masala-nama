@@ -10,7 +10,7 @@ const handler = async (event) => {
         );
 
         // Getting the rows returned by the table
-        const [rows] = await connection.execute('SELECT * from temp');
+        const [rows] = await connection.execute('SELECT * from MenuItems');
 
         // Consoles out the rows and ends the connection
         console.log(rows);

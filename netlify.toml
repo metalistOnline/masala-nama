@@ -1,0 +1,14 @@
+[build]
+    functions = "netlify/functions"
+
+## Redirects for netlify functions
+[[redirects]]
+    from = "/api/*"
+    to = "/.netlify/functions/:splat"
+    status = 200
+
+## Redirects for web app
+[[redirects]]
+    from = "*"
+    to = "/index.html"
+    status = 200

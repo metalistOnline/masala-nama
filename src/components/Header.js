@@ -5,7 +5,7 @@ export default function Header() {
     // Return the component to be rendered
     return (
         <nav className="navbar sticky-top navbar-expand-lg navbar-dark px-4 px-lg-5 py-3 py-lg-0">
-            <a href="#" className="navbar-brand p-0">
+            <a href="/" className="navbar-brand p-0">
                 <h1 className="text-primary m-0">
                     <i className="fa fa-utensils me-3"></i>Masala Nama
                 </h1>
@@ -48,7 +48,10 @@ export default function Header() {
                         Contact us at +91-9829101401
                     </a>
                 </div>
-                <a href="#" className="btn btn-primary py-2 px-4 order-button">
+                <a
+                    href="/order"
+                    className="btn btn-primary py-2 px-4 order-button"
+                >
                     Order Online
                 </a>
             </div>
