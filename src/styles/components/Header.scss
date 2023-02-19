@@ -1,0 +1,16 @@
+.sticky-top.navbar-dark {
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    background-color: rgba(15, 23, 43, 0.85) !important;
+}
+
+.logo {
+    float: left;
+    padding: 0.4rem;
+}
+
+.navbar-brand {
+    display: inline-flex;
+    align-items: center;
+}

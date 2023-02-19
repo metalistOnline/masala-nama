@@ -1,0 +1,52 @@
+.offers-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.offers-title {
+    color: #0f172b !important;
+    font-size: 3rem;
+
+    &::before,
+    &::after {
+        background: #0f172b;
+    }
+}
+
+.offer-description {
+    color: white !important;
+}
+
+.offer-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.bg-red {
+    background: linear-gradient(rgba(206, 77, 76, 0.9), rgba(206, 77, 76, 0.9)),
+        url(/img/imgChickenLeg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-yellow {
+    background-color: #fba117;
+
+    background: linear-gradient(
+            rgba(251, 161, 23, 0.9),
+            rgba(251, 161, 23, 0.9)
+        ),
+        url('/img/imgChicken2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.text-yellow {
+    color: #fba117 !important;
+}

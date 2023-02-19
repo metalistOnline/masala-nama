@@ -1,0 +1,44 @@
+.footer-text {
+    font-family: 'Nunito', sans-serif;
+}
+
+.font-1rem {
+    font-size: 1rem;
+}
+
+.map-center {
+    object-fit: cover;
+    height: 190px;
+    width: 100%;
+}
+
+.logo-footer {
+    @media screen and (min-width: 992px) {
+        right: 10%;
+        position: absolute;
+        z-index: 0;
+        opacity: 10%;
+        filter: grayscale(1);
+        background-attachment: fixed;
+    }
+
+    @media screen and (max-width: 991px) {
+        display: none;
+    }
+}
+
+.row {
+    z-index: 100;
+}
+
+.footer {
+    // opacity: 50%;
+    // position: absolute;
+    // // min-height: 100vh;
+    // background-image: url('/img/logo.png');
+    // background-repeat: no-repeat;
+    // background-blend-mode: luminosity;
+    // background-position: 50% 90%;
+    // background-attachment: fixed;
+    // background-size: contain;
+}

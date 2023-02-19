@@ -1,0 +1,32 @@
+{
+    "menu": {
+        "veg": [
+            {
+                "item": "Hara Bhara Stuff Kebab",
+                "img": "img/menu/veg/item-1.jpg",
+                "price": "265",
+                "desc": "Ipsum ipsum clita erat amet dolor justo diam"
+            },
+            {
+                "item": "Banjara Paneer Tikka",
+                "img": "img/menu/veg/item-2.jpg",
+                "price": "295",
+                "desc": "Ipsum ipsum clita erat amet dolor justo diam"
+            },
+            {
+                "item": "Malai Stuff Soya Chaap",
+                "img": "img/menu/veg/item-3.jpg",
+                "price": "295",
+                "desc": "Ipsum ipsum clita erat amet dolor justo diam"
+            }
+        ],
+        "non-veg": [
+            {
+                "item": "Hara Bhara Stuff Kebab",
+                "img": "img/menu/nonveg/item-1.jpg",
+                "price": "265",
+                "desc": "Ipsum ipsum clita erat amet dolor justo diam"
+            }
+        ]
+    }
+}
