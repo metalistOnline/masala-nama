@@ -16,7 +16,7 @@ export default function Hero() {
                                 Fine Indian Cuisine.
                             </p>
                             <a
-                                href="/order"
+                                href="#"
                                 class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft order-button"
                             >
                                 Order Online
