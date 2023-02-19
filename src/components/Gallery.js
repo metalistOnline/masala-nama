@@ -16,7 +16,32 @@ export default function Gallery() {
                         </div>
                     </div>
                     <div className="row full-size">
-                        <div className="viewer"></div>
+                        <div className="viewer">
+                            <div class="lightbox">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img
+                                            src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
+                                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+                                            alt="Table Full of Spices"
+                                            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                                        />
+                                        <img
+                                            src="img/menu/veg/item-3.jpg"
+                                            alt="Coconut with Strawberries"
+                                            class="w-100 shadow-1-strong rounded"
+                                        />
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img
+                                            src="img/menu/nonveg/item-1.jpg"
+                                            alt="Dark Roast Iced Coffee"
+                                            class="w-100 shadow-1-strong rounded"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
