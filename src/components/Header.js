@@ -1,4 +1,5 @@
 import '../styles/components/Header.scss';
+import NewWinLink from './Utils/NewWinLink';
 
 // Export Header component as default
 export default function Header() {
@@ -49,9 +50,47 @@ export default function Header() {
                         Contact us at +91-9829101401
                     </a>
                 </div>
-                <a href="#" className="btn btn-primary py-2 px-4 order-button">
+                {/* <a href="#" className="btn btn-primary py-2 px-4 order-button">
                     Order Online
-                </a>
+                </a> */}
+                {/* <NewWinLink
+                    href="https://www.zomato.com/ajmer/masala-nama-ana-sagar-lake"
+                    className="btn btn-primary py-2 px-4 order-button "
+                >
+                    <img
+                        src="img/Zomato-Icon-1.jpg"
+                        alt="Zomoto-Logo"
+                        className="m-1 zomato-Logo"
+                    />
+                    Zomato
+                </NewWinLink>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <NewWinLink
+                    href="https://www.swiggy.com/restaurants/masala-nama-sagar-link-road-north-ajmer-ajmer-659627"
+                    className="btn btn-primary py-2 px-4 order-button "
+                >
+                    <img
+                        src="img/Swiggy-Icon.png"
+                        alt="Swiggy-Logo"
+                        className="m-1 swiggy-Logo"
+                    />
+                    Swiggy
+                </NewWinLink> */}
+                <label className="nav-item nav-link">Order Online ->> </label>
+                <NewWinLink href="https://www.zomato.com/ajmer/masala-nama-ana-sagar-lake">
+                    <img
+                        src="img/Zomato-Icon-2.jpg"
+                        alt="Zomoto-Logo"
+                        className="m-1 zomato-Logo"
+                    />
+                </NewWinLink>
+                <NewWinLink href="https://www.swiggy.com/restaurants/masala-nama-sagar-link-road-north-ajmer-ajmer-659627">
+                    <img
+                        src="img/Swiggy-Icon-2.jpg"
+                        alt="Swiggy-Logo"
+                        className="m-1 swiggy-Logo btn-primary"
+                    />
+                </NewWinLink>
             </div>
         </nav>
     );
