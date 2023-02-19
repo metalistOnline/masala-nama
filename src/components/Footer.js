@@ -10,6 +10,7 @@ export default function Footer() {
             className="container-fluid bg-dark text-light footer wow fadeIn"
             data-wow-delay="0.1s"
         >
+            <img className="logo-footer" src="/img/logo.png" />
             <div className="container py-5">
                 <div className="row g-5">
                     <div className="col-lg-4 col-md-6 footer-text">

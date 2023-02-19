@@ -6,10 +6,11 @@ export default function Header() {
     return (
         <nav className="navbar sticky-top navbar-expand-lg navbar-dark px-4 px-lg-5 py-3 py-lg-0">
             <a href="#" className="navbar-brand p-0">
+                <img src="img/logo-sml.png" alt="Logo" className="m-1" />
                 <h1 className="text-primary m-0">
-                    <i className="fa fa-utensils me-3"></i>Masala Nama
+                    {/* <i className="fa fa-utensils me-3"></i> */}
+                    Masala Nama
                 </h1>
-                {/* <img src="img/logo.png" alt="Logo">  */}
             </a>
             <button
                 className="navbar-toggler"

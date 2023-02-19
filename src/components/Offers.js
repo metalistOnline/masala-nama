@@ -26,15 +26,18 @@ export default function Offers() {
                             />
 
                             <div className="offer-description">
-                                <h3>Flat 15% off through November</h3>
-                                <h5>Nov 7, 2021 – Nov 30, 2021</h5>
+                                <h3>15% off on all Walkin Orders upto 5000</h3>
+                                {/* <h5>Nov 7, 2021 – Nov 30, 2021</h5> */}
                                 <br />
                                 <div>
-                                    Order Direct from us on Thrive and get a
-                                    flat 15% off through Entire November. Get
-                                    ordering now!
+                                    Walkin Directly and get flat 15% off on our
+                                    entire range for a bill amount upto Rs.
+                                    5000.
                                     <br />
-                                    Show this code at the store: REP
+                                    Get ordering now!
+                                    <br />
+                                    Use this code at the store:{' '}
+                                    <strong>FLAT15</strong>
                                 </div>
                             </div>
                         </div>
@@ -47,13 +50,18 @@ export default function Offers() {
                             />
 
                             <div className="offer-description">
-                                <h3>20% off on Thrive</h3>
-                                <h5>Aug 3, 2021 – Aug 31, 2021</h5>
+                                <h3>20% off on all Walkin Orders above 5000</h3>
+                                {/* <h5>Aug 3, 2021 – Aug 31, 2021</h5> */}
                                 <br />
                                 <div>
-                                    Available only on Thrive
+                                    Walkin Directly and get flat 20% off on our
+                                    entire range for a bill greater than Rs.
+                                    5000.
                                     <br />
-                                    Show this code at the store: REP
+                                    Get ordering now!
+                                    <br />
+                                    Use this code at the store:{' '}
+                                    <strong>FLAT20</strong>
                                 </div>
                             </div>
                         </div>
