@@ -7,17 +7,17 @@ export default function Offers() {
             className="container-fluid position-relative p-0 offers-section bg-yellow"
         >
             <div className="container-fluid py-5 bg-yellow hero-center">
-                <div className="container-fluid py-5">
-                    <div className="row text-center mb-4 g-5">
+                <div className="container-xxl py-5">
+                    <div className="row text-center mb-4 g-5 wow fadeInUp">
                         <div className="mb-4">
-                            <h1 class="section-title ff-secondary text-center offers-title fw-normal">
+                            <h1 className="section-title ff-secondary text-center offers-title fw-normal">
                                 Offers
                             </h1>
                         </div>
                     </div>
 
-                    <div className="row align-items-center g-5">
-                        <div className="offset-xl-1 col-xl-5 col-lg-6 text-center text-lg-center">
+                    <div className="row align-items-center g-5 wow fadeInUp">
+                        <div className="col-lg-6 text-center">
                             <img
                                 className="img-thumbnail offer-img mb-3"
                                 src="/img/imgChickenLeg.jpg"
@@ -40,7 +40,7 @@ export default function Offers() {
                             </div>
                         </div>
 
-                        <div className="col-xl-5 col-lg-6 text-center text-lg-center overflow-hidden">
+                        <div className="col-lg-6 text-center">
                             <img
                                 className="img-thumbnail offer-img mb-3"
                                 src="/img/imgChicken2.jpg"
@@ -61,7 +61,6 @@ export default function Offers() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-1"></div>
                     </div>
                 </div>
             </div>

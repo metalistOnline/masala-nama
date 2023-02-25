@@ -3,7 +3,7 @@ import '../styles/components/Menu.scss';
 export default function Menu() {
     return (
         <div id="menu" className="container-fluid py-5 hero-center">
-            <div className="container">
+            <div className="container-xxl">
                 <div
                     className="text-center wow fadeInUp pb-4"
                     data-wow-delay="0.1s"

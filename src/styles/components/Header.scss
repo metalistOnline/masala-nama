@@ -1,9 +1,20 @@
+@import '../extends';
+
 .sticky-top.navbar-dark {
     width: 100%;
     position: fixed;
     backdrop-filter: blur(10px);
     background-color: rgba(15, 23, 43, 0.85) !important;
 }
+
+// @media (max-width: 991px) {
+//     .navbar-dark {
+//         position: unset;
+//         backdrop-filter: blur(10px);
+//         background-color: rgba(15, 23, 43, 0.85) !important;
+//         // background-color: transparent;
+//     }
+// }
 
 .logo {
     float: left;
@@ -15,12 +26,49 @@
     align-items: center;
 }
 
-.zomato-Logo {
-    height: 30px;
-    width: 100px;
+.zomato-button {
+    @extend .flex-center;
+    @extend .order-button;
+    background-color: #e23744;
+
+    .zomato-logo {
+        height: 18px;
+        width: auto;
+
+        .zomato {
+            fill: #ffffff;
+        }
+    }
+
+    &:hover {
+        background-color: #ffffff;
+
+        .zomato {
+            fill: #e23744;
+        }
+    }
 }
 
-.swiggy-Logo {
-    height: 30px;
-    width: 100px;
+.swiggy-button {
+    @extend .flex-center;
+    @extend .order-button;
+    background-color: #fc8019;
+
+    .swiggy-logo {
+        height: 14px;
+        width: auto;
+
+        .swiggy {
+            fill: #ffffff;
+        }
+    }
+
+    &:hover {
+        background-color: #ffffff;
+        border: none;
+
+        .swiggy {
+            fill: #fc8019;
+        }
+    }
 }
