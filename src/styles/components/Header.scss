@@ -26,9 +26,18 @@
     align-items: center;
 }
 
+.call-us {
+    font-size: larger !important;
+}
+
+.order-buttons {
+    align-items: center;
+}
+
 .zomato-button {
     @extend .flex-center;
     @extend .order-button;
+    z-index: 100 !important;
     background-color: #e23744;
 
     .zomato-logo {
@@ -49,9 +58,30 @@
     }
 }
 
+.call-kitchen {
+    width: 40px;
+    height: 45px;
+    @extend .flex-center;
+    z-index: 200 !important;
+    background-color: var(--bs-success);
+
+    i {
+        color: var(--bs-light);
+    }
+
+    &:hover {
+        background-color: var(--bs-light);
+
+        i {
+            color: var(--bs-success);
+        }
+    }
+}
+
 .swiggy-button {
     @extend .flex-center;
     @extend .order-button;
+    z-index: 100 !important;
     background-color: #fc8019;
 
     .swiggy-logo {

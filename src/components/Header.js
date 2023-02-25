@@ -3,18 +3,16 @@ import NewWinLink from './Utils/NewWinLink';
 
 // Export Header component as default
 export default function Header() {
+    // call-kitchen button changes for hover
     const callKitchen = (e) => {
-        e.target.classList.toggle('btn-light');
-        e.target.classList.toggle('btn-success');
         e.target.firstChild.classList.toggle('fa-utensils');
         e.target.firstChild.classList.toggle('fa-phone-alt');
-        <i class="bi bi-telephone-outbound"></i>;
     };
 
     // Return the component to be rendered
     return (
         <nav className="navbar sticky-top navbar-expand-lg navbar-dark px-4 px-lg-5 py-3 py-lg-0 shadow">
-            <a href="#" className="navbar-brand p-0">
+            <a href="/" className="navbar-brand p-0">
                 <img src="img/logo-sml.png" alt="Logo" className="m-1" />
                 <h1 className="text-primary m-0">Masala Nama</h1>
             </a>
@@ -30,13 +28,12 @@ export default function Header() {
                 <div className="navbar-nav ms-auto py-0 pe-4">
                     <a
                         href="tel:+91-9829101401"
-                        className="nav-item nav-link display-1"
-                        style={{ fontSize: 'large' }}
+                        className="nav-item nav-link call-us"
                     >
                         Call us at +91-9829101401
                     </a>
                 </div>
-                <div className="btn-group animated slideInRight">
+                <div className="btn-group animated slideInRight order-buttons">
                     <NewWinLink
                         href="https://www.zomato.com/ajmer/masala-nama-ana-sagar-lake"
                         className="btn p-sm-1 zomato-button"
@@ -55,8 +52,7 @@ export default function Header() {
                     </NewWinLink>
                     <a
                         href="tel:+91-9829101401"
-                        className="btn btn-success"
-                        style={{ width: '40px' }}
+                        className="btn call-kitchen shadow"
                         onMouseEnter={callKitchen}
                         onMouseLeave={callKitchen}
                     >
