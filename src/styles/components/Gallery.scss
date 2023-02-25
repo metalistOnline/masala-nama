@@ -22,3 +22,12 @@
 .full-size {
     min-height: 70vh;
 }
+
+.half-size {
+    width: 50%;
+}
+
+.square-size {
+    height: 200px;
+    object-fit: cover;
+}

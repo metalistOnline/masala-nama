@@ -3,7 +3,7 @@ import '../styles/components/Menu.scss';
 export default function Menu() {
     return (
         <div id="menu" className="container-fluid py-5 hero-center">
-            <div className="container">
+            <div className="container-xxl">
                 <div
                     className="text-center wow fadeInUp pb-4"
                     data-wow-delay="0.1s"
@@ -187,11 +187,9 @@ export default function Menu() {
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>
-                                                    Hara Bhara Stuff Kebab
-                                                </span>
+                                                <span>Bhatti Ka Paneer</span>
                                                 <span className="text-primary">
-                                                    ₹265
+                                                    ₹285
                                                 </span>
                                             </h5>
                                             <small>
@@ -216,7 +214,7 @@ export default function Menu() {
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
                                                 <span>
-                                                    Banjara Paneer Tikka
+                                                    Malai Stuff Soya Chaap
                                                 </span>
                                                 <span className="text-primary">
                                                     ₹295
@@ -244,10 +242,10 @@ export default function Menu() {
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
                                                 <span>
-                                                    Malai Stuff Soya Chaap
+                                                    Soya Chaap Tawa Masala
                                                 </span>
                                                 <span className="text-primary">
-                                                    ₹295
+                                                    ₹260
                                                 </span>
                                             </h5>
                                             <small>
@@ -272,10 +270,10 @@ export default function Menu() {
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
                                                 <span>
-                                                    Tandoori Pineapple (6 Pcs)
+                                                    Tandoori Mushroom Tikka
                                                 </span>
                                                 <span className="text-primary">
-                                                    ₹210
+                                                    ₹285
                                                 </span>
                                             </h5>
                                             <small className="fst-italic">
@@ -413,10 +411,10 @@ export default function Menu() {
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
                                                 <span>
-                                                    Murgh Dum Biryani (4 Pcs)
+                                                    Murgh Tikka Tandoori
                                                 </span>
                                                 <span className="text-primary">
-                                                    ₹495
+                                                    ₹395
                                                 </span>
                                             </h5>
                                             <small>
@@ -441,10 +439,10 @@ export default function Menu() {
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
                                                 <span>
-                                                    Matki Egg Masala (4 Eggs)
+                                                    Mutton Seekh Karara Roll
                                                 </span>
                                                 <span className="text-primary">
-                                                    ₹320
+                                                    ₹260
                                                 </span>
                                             </h5>
                                             <small>
@@ -468,9 +466,11 @@ export default function Menu() {
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Murgh Rara (4 Pcs)</span>
+                                                <span>
+                                                    Murgh Stuff Tangdi (4 Pcs)
+                                                </span>
                                                 <span className="text-primary">
-                                                    ₹495
+                                                    ₹450
                                                 </span>
                                             </h5>
                                             <small>
@@ -494,11 +494,9 @@ export default function Menu() {
                                         />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <h5 className="d-flex justify-content-between border-bottom pb-2">
-                                                <span>
-                                                    Waza Seekh Kebab Mutton
-                                                </span>
+                                                <span>Murgh Chapli Kebab</span>
                                                 <span className="text-primary">
-                                                    ₹450
+                                                    ₹395
                                                 </span>
                                             </h5>
                                             <small className="fst-italic">

@@ -11,10 +11,10 @@ export default function Footer() {
             data-wow-delay="0.1s"
         >
             <img className="logo-footer" src="/img/logo.png" />
-            <div className="container py-5">
+            <div className="container-fluid py-5 g-5">
                 <div className="row g-5">
                     <div className="col-lg-4 col-md-6 footer-text">
-                        <i class="fa fa-address-book text-primary font-1o5rem"></i>
+                        <i className="fa fa-address-book text-primary font-1o5rem"></i>
                         &nbsp;&nbsp;
                         <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
                             Contact
@@ -74,13 +74,13 @@ export default function Footer() {
                         </div> */}
                     </div>
                     <div className="col-lg-4 col-md-6 footer-text">
-                        <i class="fa fa-clock text-primary font-1o5rem"></i>
+                        <i className="fa fa-clock text-primary font-1o5rem"></i>
                         &nbsp;&nbsp;
                         <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
                             Timings
                         </h4>
                         <h5 className="text-light fw-normal">
-                            <i class="fa fa-calendar-week me-3 font-1rem"></i>
+                            <i className="fa fa-calendar-week me-3 font-1rem"></i>
                             Monday - Friday
                         </h5>
                         <p>
@@ -88,7 +88,7 @@ export default function Footer() {
                             PM - 11:00 PM
                         </p>
                         <h5 className="text-light fw-normal">
-                            <i class="fa fa-calendar-day me-3 font-1rem"></i>
+                            <i className="fa fa-calendar-day me-3 font-1rem"></i>
                             Saturday - Sunday
                         </h5>
                         <p>
@@ -106,7 +106,7 @@ export default function Footer() {
                         </p>
                     </div>
                     <div className="col-lg-4 col-md-12">
-                        <i class="fa fa-map-marked-alt text-primary font-1o5rem"></i>
+                        <i className="fa fa-map-marked-alt text-primary font-1o5rem"></i>
                         &nbsp;&nbsp;
                         <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
                             Location
@@ -126,7 +126,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="container">
+            <div className="container-fluid g-5">
                 <div className="copyright">
                     <div className="row">
                         <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">

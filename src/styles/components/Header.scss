@@ -1,9 +1,20 @@
+@import '../extends';
+
 .sticky-top.navbar-dark {
     width: 100%;
     position: fixed;
     backdrop-filter: blur(10px);
     background-color: rgba(15, 23, 43, 0.85) !important;
 }
+
+// @media (max-width: 991px) {
+//     .navbar-dark {
+//         position: unset;
+//         backdrop-filter: blur(10px);
+//         background-color: rgba(15, 23, 43, 0.85) !important;
+//         // background-color: transparent;
+//     }
+// }
 
 .logo {
     float: left;
@@ -13,4 +24,81 @@
 .navbar-brand {
     display: inline-flex;
     align-items: center;
+}
+
+.call-us {
+    font-size: larger !important;
+}
+
+.order-buttons {
+    align-items: center;
+}
+
+.zomato-button {
+    @extend .flex-center;
+    @extend .order-button;
+    z-index: 100 !important;
+    background-color: #e23744;
+
+    .zomato-logo {
+        height: 18px;
+        width: auto;
+
+        .zomato {
+            fill: #ffffff;
+        }
+    }
+
+    &:hover {
+        background-color: #ffffff;
+
+        .zomato {
+            fill: #e23744;
+        }
+    }
+}
+
+.call-kitchen {
+    width: 40px;
+    height: 45px;
+    @extend .flex-center;
+    z-index: 200 !important;
+    background-color: var(--bs-success);
+
+    i {
+        color: var(--bs-light);
+    }
+
+    &:hover {
+        background-color: var(--bs-light);
+
+        i {
+            color: var(--bs-success);
+        }
+    }
+}
+
+.swiggy-button {
+    @extend .flex-center;
+    @extend .order-button;
+    z-index: 100 !important;
+    background-color: #fc8019;
+
+    .swiggy-logo {
+        height: 14px;
+        width: auto;
+
+        .swiggy {
+            fill: #ffffff;
+        }
+    }
+
+    &:hover {
+        background-color: #ffffff;
+        border: none;
+
+        .swiggy {
+            fill: #fc8019;
+        }
+    }
 }

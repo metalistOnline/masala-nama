@@ -13,18 +13,19 @@
 }
 
 .logo-footer {
-    @media screen and (min-width: 992px) {
-        right: 10%;
-        position: absolute;
-        z-index: 0;
-        opacity: 10%;
-        filter: grayscale(1);
-        background-attachment: fixed;
-    }
+    // @media screen and (min-width: 992px) {
+    // right: 10%;
+    right: 2%;
+    position: absolute;
+    z-index: 0;
+    opacity: 10%;
+    filter: grayscale(1);
+    background-attachment: fixed;
+    // }
 
-    @media screen and (max-width: 991px) {
-        display: none;
-    }
+    // @media screen and (max-width: 991px) {
+    //     display: none;
+    // }
 }
 
 .row {
