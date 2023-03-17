@@ -26,8 +26,8 @@ export default function Hero() {
                         <div className="col-lg-6 text-center text-lg-end overflow-hidden">
                             <img
                                 className="img-fluid"
-                                src="img/hero.png"
-                                alt=""
+                                src="img/biriyani-on-a-plate.png"
+                                alt="Chicken biriyani on a roll"
                             />
                         </div>
                     </div>
